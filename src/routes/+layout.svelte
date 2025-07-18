@@ -1,5 +1,4 @@
 <script lang="ts">
-	import '../app.css'; // Import file CSS utama untuk Tailwind
 	import Navbar from '$lib/components/Navbar.svelte';
 </script>
 
