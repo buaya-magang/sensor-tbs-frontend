@@ -5,4 +5,7 @@
 		khususnya untuk meningkatkan efisiensi dalam panen kelapa sawit melalui klasifikasi kematangan buah
 		yang akurat dan cepat.
 	</p>
+    <p class="text-gray-600 max-w-2xl">
+		Pengguna dapat mengunggah gambar TBS. Prediksi dilakukan menggunakan model pembelajaran mesin yang telah dilatih berdasarkan data gambar yang diambil langsung dari lapangan.
+	</p>
 </div>
