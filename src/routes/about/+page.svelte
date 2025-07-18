@@ -4,6 +4,13 @@
 </script>
 
 <div class="container mx-auto grid grid-cols-1 items-center gap-12 px-4 py-16 text-center sm:grid-cols-2 sm:text-left">
+    <div>
+		<img
+			src={tbsImage}
+			alt="Ilustrasi Tandan Buah Segar"
+			class="mx-auto w-full max-w-md animate-float"
+		/>
+	</div>
 	
     <div class="space-y-6">
 		<h1 class="text-4xl font-bold text-gray-800 md:text-5xl">
@@ -21,13 +28,4 @@
 			Mulai Klasifikasi →
 		</a>
 	</div>
-
-	<div>
-		<img
-			src={tbsImage}
-			alt="Ilustrasi Tandan Buah Segar"
-			class="mx-auto w-full max-w-md animate-float"
-		/>
-	</div>
-
 </div>
