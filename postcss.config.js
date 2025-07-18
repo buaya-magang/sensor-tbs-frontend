@@ -1,6 +1,9 @@
 export default {
   plugins: {
-    '@tailwindcss/postcss': {}, // <- Gunakan nama paket yang baru di sini
+    // <- Gunakan nama paket yang baru di sini
+    '@tailwindcss/postcss': {},
+
     autoprefixer: {},
+    tailwindcss: {}
   },
 }
