@@ -41,5 +41,3 @@
 			alt="Ilustrasi Kelapa Sawit"
 		/>
 	</div>
-	
-</div>
