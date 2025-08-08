@@ -7,7 +7,7 @@
 	
 	<div class="order-2 flex flex-col justify-center space-y-6 text-center lg:order-1 lg:text-left">
 		<h1 class="text-4xl font-bold text-gray-800 lg:text-5xl">
-			Klasifikasi Kematangan TBS Kelapa Sawit
+			Klasifikasi Kematangan TBS
 		</h1>
 		<p class="text-gray-600">
 			Sistem ini memanfaatkan model deep learning ResNet50 untuk menentukan kematangan TBS berdasarkan
