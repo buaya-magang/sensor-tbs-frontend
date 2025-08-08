@@ -1,5 +1,6 @@
 <script lang="ts">
 	// Variabel untuk menyimpan status
+	import ProgressBar from '$lib/components/ProgressBar.svelte';
 	let predictionResult: { prediction: string; confidence: string } | null = null;
 	let isLoading = false;
 	let errorMessage = '';
@@ -77,26 +78,27 @@
 	/>
 
 	{#if isLoading}
-		<div class="text-center p-4">
-			<p class="animate-pulse">Menganalisis gambar...</p>
+		<div class="space-y-3 text-center p-4">
+			<p class="text-pink-600 font-semibold animate-pulse">MENGANALISIS GAMBAR...</p>
+			<ProgressBar />
 		</div>
-	{:else if predictionResult}
-		<div class="text-left bg-white p-6 rounded-lg shadow-md border border-gray-200">
-			<h3 class="font-bold text-lg mb-3">Hasil Prediksi:</h3>
-			<p class="text-base mb-1">
-				<strong>Status:</strong>
-				<span class="font-mono text-lg ml-2 px-3 py-1 rounded-full bg-green-100 text-green-800">
-					{predictionResult.prediction}
-				</span>
-			</p>
-			<p class="text-base">
-				<strong>Tingkat Keyakinan:</strong>
-				<span class="font-mono text-lg ml-2">
-					{parseFloat(predictionResult.confidence).toFixed(2) * 100}%
-				</span>
-			</p>
-		</div>
-	{:else if errorMessage}
+		{:else if predictionResult}
+			<div class="text-left bg-white p-6 rounded-lg shadow-md border border-gray-200">
+				<h3 class="font-bold text-lg mb-3">Hasil Prediksi:</h3>
+				<p class="text-base mb-1">
+					<strong>Status:</strong>
+					<span class="font-mono text-lg ml-2 px-3 py-1 rounded-full bg-green-100 text-green-800">
+						{predictionResult.prediction}
+					</span>
+				</p>
+				<p class="text-base">
+					<strong>Tingkat Keyakinan:</strong>
+					<span class="font-mono text-lg ml-2">
+						{parseFloat(predictionResult.confidence).toFixed(2) * 100}%
+					</span>
+				</p>
+			</div>
+		{:else if errorMessage}
 		<div class="text-center p-4 bg-red-100 text-red-700 rounded-lg">
 			<p>{errorMessage}</p>
 		</div>
