@@ -2,22 +2,94 @@
 	const currentYear = new Date().getFullYear();
 </script>
 
-<footer class="mt-20 border-t border-slate-200">
-	<div class="container mx-auto px-4 py-8">
-		<div class="flex flex-col items-center gap-4 sm:flex-row sm:justify-between">
-			
-			<div class="text-center text-sm text-slate-500 sm:text-left">
-				<p>&copy; {currentYear} SensorTBS. byKasolll</p>
-			</div>
+<footer class="bg-slate-800 text-slate-400 mt-20">
+	<div class="container mx-auto py-8 px-4 text-center">
+		<div class="flex justify-center items-center space-x-6 mb-6">
+			<a
+				href="https://github.com/buaya-magang"
+				target="_blank"
+				rel="noopener noreferrer"
+				aria-label="GitHub Profile"
+				class="hover:text-white transition-colors"
+			>
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					width="24"
+					height="24"
+					viewBox="0 0 24 24"
+					fill="none"
+					stroke="currentColor"
+					stroke-width="2"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					><path
+						d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
+					/></svg
+				>
+			</a>
 
-			<div class="text-sm font-medium text-slate-500">
-				<ul class="flex items-center space-x-6">
-					<li><a href="/" class="transition-colors hover:text-slate-900">Home</a></li>
-					<li><a href="/klasifikasi" class="transition-colors hover:text-slate-900">Classification</a></li>
-					<li><a href="/about" class="transition-colors hover:text-slate-900">About</a></li>
-				</ul>
-			</div>
+			<a
+				href="https://huggingface.co/aryairfan"
+				target="_blank"
+				rel="noopener noreferrer"
+				aria-label="Hugging Face Profile"
+				class="hover:text-white transition-colors font-bold text-2xl"
+			>
+				🤗
+			</a>
 
+			<a
+				href="https://instagram.com/kasolll__"
+				target="_blank"
+				rel="noopener noreferrer"
+				aria-label="Instagram Profile"
+				class="hover:text-white transition-colors"
+			>
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					width="24"
+					height="24"
+					viewBox="0 0 24 24"
+					fill="none"
+					stroke="currentColor"
+					stroke-width="2"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					><rect width="20" height="20" x="2" y="2" rx="5" ry="5" /><path
+						d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+					/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5" /></svg
+				>
+			</a>
+
+			<a
+				href="https://www.linkedin.com/search/results/all/?keywords=Irfan%20Aryadi"
+				target="_blank"
+				rel="noopener noreferrer"
+				aria-label="LinkedIn Profile"
+				class="hover:text-white transition-colors"
+			>
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					width="24"
+					height="24"
+					viewBox="0 0 24 24"
+					fill="none"
+					stroke="currentColor"
+					stroke-width="2"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" /><rect
+						width="4"
+						height="12"
+						x="2"
+						y="9"
+					/><circle cx="4" cy="4" r="2" /></svg
+				>
+			</a>
 		</div>
+
+		<p class="text-sm">
+			&copy; {currentYear} SensorTBS. byKasolll
+		</p>
 	</div>
 </footer>
