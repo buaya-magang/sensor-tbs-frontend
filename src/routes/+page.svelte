@@ -1,6 +1,6 @@
 <script lang="ts">
 	// Ganti dengan path gambar Anda, misalnya di 'src/lib/assets/sawit.png'
-	import tbsImage from '$lib/assets/sawit.png'; 
+	import tbsImage from '$lib/assets/tbs-illustration.png'; 
 </script>
 
 <div class="grid grid-cols-1 items-center gap-y-10 lg:grid-cols-2 lg:gap-x-12">
