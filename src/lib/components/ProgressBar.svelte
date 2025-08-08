@@ -3,6 +3,6 @@
 </script>
 
 <div class="w-full overflow-hidden rounded-full bg-gray-200 h-2.5 relative">
-	<div class="absolute top-0 bottom-0 h-full rounded-full bg-green-500 w-1/2 animate-indeterminate-progress">
+	<div class="absolute top-0 bottom-0 h-full rounded-full bg-blue-500 w-1/2 animate-indeterminate-progress">
 	</div>
 </div>
