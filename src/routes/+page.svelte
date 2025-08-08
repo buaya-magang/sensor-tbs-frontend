@@ -10,7 +10,7 @@
 			Klasifikasi Kematangan TBS
 		</h1>
 		<p class="text-gray-600">
-			Sistem ini memanfaatkan model deep learning ResNet50 untuk menentukan kematangan TBS berdasarkan
+			Sistem ini memanfaatkan model deep learning ResNet50 untuk menentukan Tingkat Kematangan Buah Kelapa Sawit berdasarkan
 			input gambar.
 		</p>
 		<div class="flex flex-col items-center sm:flex-row sm:justify-center lg:justify-start">
