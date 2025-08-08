@@ -3,7 +3,7 @@
 	import tbsImage from '$lib/assets/tbs-illustration.png';
 </script>
 
-<div class="container mx-auto px-4 py-16">
+<div class="container mx-auto px-4 py-12">
 	<div class="grid grid-cols-1 items-center gap-y-10 lg:grid-cols-2 lg:gap-x-12">
 		
 		<div class="order-2 flex flex-col justify-center space-y-6 text-center lg:order-1 lg:text-left">
