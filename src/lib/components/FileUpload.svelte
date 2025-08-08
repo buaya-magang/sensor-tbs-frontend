@@ -3,6 +3,7 @@
 	let predictionResult: { prediction: string; confidence: string } | null = null;
 	let isLoading = false;
 	let errorMessage = '';
+	let previewUrl: string | null = null; // Variabel untuk URL preview gambar
 
 	// Ganti dengan URL API Anda yang ada di Hugging Face Spaces
 	const API_URL = 'https://aryairfan-tbs-api.hf.space/predict';
@@ -12,16 +13,19 @@
 		const target = event.target as HTMLInputElement;
 		const file = target.files?.[0];
 
-		if (!file) {
-			return;
-		}
+		if (!file) return;
 
 		// Reset status sebelum request baru
 		isLoading = true;
 		errorMessage = '';
 		predictionResult = null;
+		
+		// Buat URL sementara untuk preview gambar
+		if (previewUrl) {
+			URL.revokeObjectURL(previewUrl); // Hapus URL lama untuk mencegah memory leak
+		}
+		previewUrl = URL.createObjectURL(file);
 
-		// Siapkan data untuk dikirim
 		const formData = new FormData();
 		formData.append('file', file);
 
@@ -32,16 +36,18 @@
 				body: formData
 			});
 
-			if (!response.ok) {
-				throw new Error(`Error: ${response.statusText}`);
-			}
-
 			const data = await response.json();
+
+			if (!response.ok) {
+				// Ambil pesan error dari API jika ada, jika tidak gunakan statusText
+				throw new Error(data.error || `Error: ${response.statusText}`);
+			}
+			
 			predictionResult = data;
 
-		} catch (error) {
+		} catch (error: any) {
 			console.error('Gagal menghubungi API:', error);
-			errorMessage = 'Gagal menghubungi server. Silakan coba lagi.';
+			errorMessage = error.message || 'Gagal menghubungi server. Silakan coba lagi.';
 		} finally {
 			// Pastikan loading berhenti setelah selesai
 			isLoading = false;
@@ -51,12 +57,16 @@
 
 <div class="space-y-8">
 	<label
-		for="file-upload"
-		class="block border-2 border-dashed border-blue-400 rounded-lg p-12 text-center cursor-pointer hover:bg-blue-50/50 transition-colors"
-	>
+	for="file-upload"
+	class="block border-2 border-dashed border-blue-400 rounded-lg p-4 text-center cursor-pointer hover:bg-blue-50/50 transition-colors min-h-[150px] flex justify-center items-center"
+>
+	{#if !previewUrl}
 		<p class="text-gray-500">
 			Drag image file here or <span class="text-blue-600 font-semibold">click to browse</span>
 		</p>
+	{:else}
+		<img src={previewUrl} alt="Preview Gambar" class="max-h-48 object-contain rounded-md" />
+	{/if}
 	</label>
 	<input
 		type="file"
