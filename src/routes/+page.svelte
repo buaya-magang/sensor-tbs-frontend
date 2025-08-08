@@ -1,6 +1,6 @@
 <script lang="ts">
 	// Pastikan path ke gambar Anda sudah benar, misalnya di 'src/lib/assets/sawit.png'
-	import tbsImage from '$lib/assets/sawit.png';
+	import tbsImage from '$lib/assets/tbs-illustration.png';
 </script>
 
 <div class="container mx-auto px-4 py-16">
