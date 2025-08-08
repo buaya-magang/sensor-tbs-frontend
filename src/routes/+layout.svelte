@@ -1,5 +1,5 @@
 <script lang="ts">
-	import '../app.css'; // Sesuaikan dengan setup CSS Anda
+	// Hapus 'import ../app.css' dari sini
 	import Navbar from '$lib/components/Navbar.svelte';
 	import Footer from '$lib/components/Footer.svelte';
 </script>
