@@ -79,7 +79,7 @@
 
 	{#if isLoading}
 		<div class="space-y-3 text-center p-4">
-			<p class="text-blue-600 font-semibold animate-pulse">MENGANALISIS GAMBAR...</p>
+			<p class="text-blue-600 font-semibold animate-pulse">Menganalisis Gambar...</p>
 			<ProgressBar />
 		</div>
 		{:else if predictionResult}
