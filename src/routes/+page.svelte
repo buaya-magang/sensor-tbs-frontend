@@ -1,13 +1,13 @@
 <script lang="ts">
-	import tbsImage from '$lib/assets/tbs-illustration.png';
+	// 1. Path gambar diperbaiki menjadi 'sawit.png'
+	import tbsImage from '$lib/assets/sawit.png';
 	import { viewport } from '$lib/actions/viewport.js';
 </script>
 
 <div class="container mx-auto grid grid-cols-1 items-center gap-y-10 px-10 pt-14 md:grid-cols-2 md:gap-x-12">
 	
 	<div class="order-2 flex flex-col justify-center space-y-6 text-center md:order-1 md:text-left">
-		
-        <h1 use:viewport class="fade-up text-4xl font-bold text-gray-800 md:text-5xl">
+		<h1 use:viewport class="fade-up text-4xl font-bold text-gray-800 md:text-5xl">
 			Klasifikasi Kematangan TBS
 		</h1>
 		<p use:viewport class="fade-up text-gray-600" style="transition-delay: 150ms;">
@@ -33,11 +33,3 @@
 	</div>
 	
 </div>
-
-	<div use:viewport class="zoom-in order-1 lg:order-2">
-		<img
-			src={tbsImage}
-			class="mx-auto h-auto w-full max-w-md animate-float"
-			alt="Ilustrasi Kelapa Sawit"
-		/>
-	</div>
