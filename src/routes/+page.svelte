@@ -1,6 +1,6 @@
 <script lang="ts">
 	// 1. Path gambar diperbaiki menjadi 'sawit.png'
-	import tbsImage from '$lib/assets/sawit.png';
+	import tbsImage from '$lib/assets/tbs-illustration.png';
 	import { viewport } from '$lib/actions/viewport.js';
 </script>
 
