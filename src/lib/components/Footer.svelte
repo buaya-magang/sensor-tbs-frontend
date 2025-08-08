@@ -2,15 +2,20 @@
 	const currentYear = new Date().getFullYear();
 </script>
 
-<footer class="bg-slate-800 text-slate-400 mt-20">
+<footer class="bg-slate-800 text-slate-300 mt-20">
 	<div class="container mx-auto py-8 px-4 text-center">
-		<div class="flex justify-center items-center space-x-6 mb-6">
+        
+		<p class="text-sm">
+			&copy; {currentYear} SensorTBS. byKASOLLL__
+		</p>
+		<div class="flex justify-center items-center space-x-6 mb-6 text-white">
+			
 			<a
 				href="https://github.com/buaya-magang"
 				target="_blank"
 				rel="noopener noreferrer"
 				aria-label="GitHub Profile"
-				class="hover:text-white transition-colors"
+				class="transition-opacity hover:opacity-80"
 			>
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
@@ -33,7 +38,7 @@
 				target="_blank"
 				rel="noopener noreferrer"
 				aria-label="Hugging Face Profile"
-				class="hover:text-white transition-colors font-bold text-2xl"
+				class="transition-opacity hover:opacity-80 font-bold text-2xl"
 			>
 				🤗
 			</a>
@@ -43,7 +48,7 @@
 				target="_blank"
 				rel="noopener noreferrer"
 				aria-label="Instagram Profile"
-				class="hover:text-white transition-colors"
+				class="transition-opacity hover:opacity-80"
 			>
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
@@ -66,7 +71,7 @@
 				target="_blank"
 				rel="noopener noreferrer"
 				aria-label="LinkedIn Profile"
-				class="hover:text-white transition-colors"
+				class="transition-opacity hover:opacity-80"
 			>
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
@@ -87,9 +92,5 @@
 				>
 			</a>
 		</div>
-
-		<p class="text-sm">
-			&copy; {currentYear} SensorTBS. byKasolll
-		</p>
 	</div>
 </footer>
