@@ -1,19 +1,19 @@
 <script lang="ts">
-	// Tetap sama seperti sebelumnya
 	import tbsImage from '$lib/assets/tbs-illustration.png';
 	import { viewport } from '$lib/actions/viewport.js';
 </script>
 
-<!-- Wrapper utama -->
-<div class="mx-auto max-w-screen-xl flex flex-col-reverse md:flex-row items-center justify-between gap-y-10 px-6 pt-20 md:pt-28 lg:px-16 min-h-[85vh]">
-
-	<!-- Bagian teks -->
-	<div class="flex flex-col justify-center space-y-6 text-center md:text-left w-full md:w-1/2 md:pl-4">
+<!-- Hero Section -->
+<div
+	class="container mx-auto max-w-6xl grid grid-cols-1 md:grid-cols-2 items-center gap-10 px-6 lg:px-12 py-20 md:py-28"
+>
+	<!-- Kolom Teks -->
+	<div class="order-2 md:order-1 flex flex-col justify-center space-y-6 text-center md:text-left">
 		<h1
 			use:viewport
 			class="fade-up text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 leading-tight"
 		>
-			Klasifikasi Kematangan TBS
+			SensorTBS: <br class="hidden sm:block" /> Klasifikasi Kematangan TBS
 		</h1>
 
 		<p
@@ -39,12 +39,12 @@
 		</div>
 	</div>
 
-	<!-- Bagian gambar -->
-	<div use:viewport class="zoom-in flex justify-center md:justify-end w-full md:w-1/2">
+	<!-- Kolom Gambar -->
+	<div use:viewport class="zoom-in order-1 md:order-2 flex justify-center md:justify-end">
 		<img
 			src={tbsImage}
-			class="mx-auto h-auto w-64 sm:w-80 md:w-[420px] lg:w-[460px] animate-float drop-shadow-md"
 			alt="Ilustrasi Kelapa Sawit"
+			class="w-64 sm:w-80 md:w-[420px] lg:w-[460px] h-auto drop-shadow-md animate-float"
 		/>
 	</div>
 </div>
