@@ -1,35 +1,51 @@
 <script lang="ts">
-	// 1. Path gambar diperbaiki menjadi 'sawit.png'
+	// Tetap sama seperti sebelumnya
 	import tbsImage from '$lib/assets/tbs-illustration.png';
 	import { viewport } from '$lib/actions/viewport.js';
 </script>
 
-<div class="container mx-auto grid grid-cols-1 items-center gap-y-10 px-10 pt-14 md:grid-cols-2 md:gap-x-12">
-	
+<!-- Tambahkan max-w-screen-xl dan min-h-screen agar lebih proporsional -->
+<div class="container mx-auto max-w-screen-xl grid grid-cols-1 items-center gap-y-10 px-6 pt-20 md:grid-cols-2 md:gap-x-12 lg:px-12 min-h-[85vh]">
+
+	<!-- Teks -->
 	<div class="order-2 flex flex-col justify-center space-y-6 text-center md:order-1 md:text-left">
-		<h1 use:viewport class="fade-up text-4xl font-bold text-gray-800 md:text-5xl">
+		<h1
+			use:viewport
+			class="fade-up text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 leading-tight"
+		>
 			Klasifikasi Kematangan TBS
 		</h1>
-		<p use:viewport class="fade-up text-gray-600" style="transition-delay: 150ms;">
-			Sistem ini memanfaatkan model deep learning ResNet50 untuk menentukan Tingkat Kematangan Buah Kelapa Sawit berdasarkan
-			input gambar.
+
+		<p
+			use:viewport
+			class="fade-up text-gray-600 text-base sm:text-lg max-w-lg mx-auto md:mx-0"
+			style="transition-delay: 150ms;"
+		>
+			Sistem ini memanfaatkan model deep learning <strong>ResNet50</strong> untuk menentukan tingkat kematangan
+			buah kelapa sawit berdasarkan input gambar.
 		</p>
-		<div use:viewport class="fade-up flex flex-col items-center sm:flex-row sm:justify-center md:justify-start" style="transition-delay: 300ms;">
+
+		<div
+			use:viewport
+			class="fade-up flex flex-col items-center sm:flex-row sm:justify-center md:justify-start"
+			style="transition-delay: 300ms;"
+		>
 			<a
 				href="/klasifikasi"
-				class="inline-block rounded-lg bg-blue-600 px-8 py-3 font-bold text-white transition-transform hover:scale-105 hover:bg-blue-700"
+				class="inline-block rounded-lg bg-blue-600 px-8 py-3 font-bold text-white transition-transform hover:scale-105 hover:bg-blue-700 shadow-md"
 			>
 				Mulai Klasifikasi →
 			</a>
 		</div>
 	</div>
 
-	<div use:viewport class="zoom-in order-1 md:order-2">
+	<!-- Gambar -->
+	<div use:viewport class="zoom-in order-1 md:order-2 flex justify-center md:justify-end">
 		<img
 			src={tbsImage}
-			class="mx-auto h-auto w-full max-w-md animate-float"
+			class="mx-auto h-auto w-64 sm:w-80 md:w-[420px] lg:w-[460px] animate-float drop-shadow-md"
 			alt="Ilustrasi Kelapa Sawit"
 		/>
 	</div>
-	
+
 </div>
