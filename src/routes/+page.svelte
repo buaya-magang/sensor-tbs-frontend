@@ -1,4 +1,7 @@
 <script lang="ts">
+    // Pastikan Anda tidak mengimpor Navbar di sini (Navbar ada di +layout.svelte)
+    
+    // Path gambar
     import tbsImage from '$lib/assets/tbs-illustration.png';
     import { viewport } from '$lib/actions/viewport.js';
 </script>
