@@ -4,11 +4,11 @@
 	import { viewport } from '$lib/actions/viewport.js';
 </script>
 
-<!-- Tambahkan max-w-screen-xl dan min-h-screen agar lebih proporsional -->
-<div class="container mx-auto max-w-screen-xl grid grid-cols-1 items-center gap-y-10 px-6 pt-20 md:grid-cols-2 md:gap-x-12 lg:px-12 min-h-[85vh]">
+<!-- Wrapper utama -->
+<div class="mx-auto max-w-screen-xl flex flex-col-reverse md:flex-row items-center justify-between gap-y-10 px-6 pt-20 md:pt-28 lg:px-16 min-h-[85vh]">
 
-	<!-- Teks -->
-	<div class="order-2 flex flex-col justify-center space-y-6 text-center md:order-1 md:text-left">
+	<!-- Bagian teks -->
+	<div class="flex flex-col justify-center space-y-6 text-center md:text-left w-full md:w-1/2 md:pl-4">
 		<h1
 			use:viewport
 			class="fade-up text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 leading-tight"
@@ -39,13 +39,12 @@
 		</div>
 	</div>
 
-	<!-- Gambar -->
-	<div use:viewport class="zoom-in order-1 md:order-2 flex justify-center md:justify-end">
+	<!-- Bagian gambar -->
+	<div use:viewport class="zoom-in flex justify-center md:justify-end w-full md:w-1/2">
 		<img
 			src={tbsImage}
 			class="mx-auto h-auto w-64 sm:w-80 md:w-[420px] lg:w-[460px] animate-float drop-shadow-md"
 			alt="Ilustrasi Kelapa Sawit"
 		/>
 	</div>
-
 </div>
