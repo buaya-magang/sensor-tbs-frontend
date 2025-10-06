@@ -1,5 +1,7 @@
 <script lang="ts">
-    // 1. Path gambar diperbaiki menjadi 'sawit.png'
+    // Pastikan Anda TIDAK mengimpor Navbar di sini
+    
+    // Path gambar
     import tbsImage from '$lib/assets/tbs-illustration.png';
     import { viewport } from '$lib/actions/viewport.js';
 </script>
@@ -21,7 +23,7 @@
             >
                 Mulai Klasifikasi →
             </a>
-        </div>
+    </div>
     </div>
 
     <div use:viewport class="zoom-in order-1 md:order-2">
